@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - iPortfolio Bootstrap Template</title>
+  <title>Moenes Zribi | IoT-CPS & Embedded Systems Engineer</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -94,11 +94,31 @@
       <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Moenes Zribi</h2>
-        <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <h2> Hi, I'm Moenes</h2>
+        <p><span id="typed-text"></span></p>
       </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var options = {
+                strings: [
+                    "I’m an IoT / Embedded Systems Engineer.",
+                    "Scroll down to explore my projects!",
+                    "They're pretty cool—go check them out.",
+                    "Still here?",
+                    "Nice!",
+                    "Alright, let’s restart the loop..."
+                ],
+                typeSpeed: 50, // Vitesse de frappe
+                backSpeed: 20, // Vitesse d'effacement
+                backDelay: 1100, // Pause avant d'effacer
+                startDelay: 500, // Début après 500ms
+                loop: true // Pour répéter en boucle
+            };
 
-    </section><!-- /Hero Section -->
+            var typed = new Typed("#typed-text", options);
+        });
+    </script>
+    </section><!-- /Hero Section --> 
 
     <!-- About Section -->
     <section id="about" class="about section">
